@@ -28,7 +28,7 @@ require_once "config.php";
                         foreach ($cookies as $cookie): ?>
                             <tr>
                                 <td><?= $cookie["value"]?></td>
-                                <td><?= date('d/m/Y à H:i', strtotime($cookie['created_at'])) ?></td>
+                                <td><?= date('d/m/Y à H:i', strtotime($cookie['date_steal'])) ?></td>
                             </tr>
                         <?php endforeach;
                     } catch(PDOException $e) {
