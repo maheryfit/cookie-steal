@@ -1,0 +1,6 @@
+-- CREATE DATABASE cookie_steal;
+CREATE TABLE cookie (
+    id SERIAL PRIMARY KEY,
+    value VARCHAR (50) NOT NULL,
+    date_steal TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
